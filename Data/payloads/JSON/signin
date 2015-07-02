@@ -1,5 +1,0 @@
-{
-  "userId":"${0}",
-  "password":"${1}",
-  "action":"signin"
-}
