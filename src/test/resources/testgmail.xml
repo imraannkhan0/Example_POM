@@ -1,0 +1,8 @@
+<suit name="gmail suit">
+    <test name="Gmail Test">
+            <classes>
+                <class name="rnd.GooglePortalClass"></class>
+            </classes>
+    </test>
+    "
+</suit>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4424" started-at="2015-06-12T20:05:14Z" finished-at="2015-06-12T20:05:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4424" started-at="2015-06-12T20:05:14Z" finished-at="2015-06-12T20:05:18Z">
+      <class name="rnd.apitest.GoogleTest">
+        <test-method status="PASS" signature="setUpEnv()[pri:0, instance:rnd.apitest.GoogleTest@142eda55]" name="setUpEnv" is-config="true" duration-ms="578" started-at="2015-06-13T01:35:14Z" finished-at="2015-06-13T01:35:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnv -->
+        <test-method status="PASS" signature="GoogleMapTest_Json()[pri:0, instance:rnd.apitest.GoogleTest@142eda55]" name="GoogleMapTest_Json" duration-ms="2190" started-at="2015-06-13T01:35:14Z" finished-at="2015-06-13T01:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleMapTest_Json -->
+        <test-method status="PASS" signature="signinTest()[pri:0, instance:rnd.apitest.GoogleTest@142eda55]" name="signinTest" duration-ms="1639" started-at="2015-06-13T01:35:16Z" finished-at="2015-06-13T01:35:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:rnd.apitest.GoogleTest@142eda55]" name="endTest" is-config="true" duration-ms="0" started-at="2015-06-13T01:35:18Z" finished-at="2015-06-13T01:35:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- rnd.apitest.GoogleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

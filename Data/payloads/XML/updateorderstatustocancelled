@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<orderCancellationEntry>
+ <releaseId>${0}</releaseId>
+ <cancellationReasonId>1</cancellationReasonId>
+ <userLogin>${1}</userLogin>
+ <comment>test order</comment>
+</orderCancellationEntry>
