@@ -1,0 +1,9 @@
+<refundEntry>        
+        <login>manishkumar.gupta@myntra.com</login>
+  		<orderId>20708750</orderId>
+  		<bankRefundAmount>1899</bankRefundAmount>
+  		<refundMode>NEFT</refundMode>
+  		<refundPaymentAccountId>25</refundPaymentAccountId>
+  		<returnId>2515204</returnId>
+  		<erpFailReason>####</erpFailReason>
+</refundEntry>

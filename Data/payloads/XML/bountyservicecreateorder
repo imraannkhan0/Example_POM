@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<orderCreation>
+    <login>${0}</login>
+    <sessionId>${1}</sessionId>
+    <binNumber>${2}</binNumber>
+    <pgDiscount>${3}</pgDiscount>
+    <emiCharge>${4}</emiCharge>
+    <address>${5}</address>
+    <clientContext>${6}</clientContext>
+    <cartContext>${7}</cartContext>
+    <paymentMethod>${8}</paymentMethod>
+</orderCreation>

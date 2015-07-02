@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
+  <if>
+    <equals arg2="testngxmlRun" arg1="${TYPE}"/>
+    <then>
+      <echo message="TestNG XML run detected"/>
+      <copy file="${ARTIFACT}" tofile="target/customizedTestng.xml"/>
+    </then>
+    <else>
+      <if>
+        <equals arg2="classRun" arg1="${TYPE}"/>
+        <then>
+          <echo message="Class run detected"/>
+          <copy file="src/test/resources/templates/template_classTestng.xml" tofile="target/customizedTestng.xml"/>
+          <echo message="Replacing Class name"/>
+          <replaceregexp replace="${ARTIFACT}" file="target/customizedTestng.xml" match="TempClass"/>
+        </then>
+        <else>
+          <if>
+            <equals arg2="packageRun" arg1="${TYPE}"/>
+            <then>
+              <echo message="Package run detected"/>
+              <copy file="src/test/resources/templates/template_packageTestng.xml" tofile="target/customizedTestng.xml"/>
+              <echo message="Replacing Package name"/>
+              <replaceregexp replace="${ARTIFACT}" file="target/customizedTestng.xml" match="TempPackage"/>
+            </then>
+          </if>
+        </else>
+      </if>
+      <echo message="Replacing Suite Name"/>
+      <replaceregexp replace="${SUITE}" file="target/customizedTestng.xml" match="TempSuite"/>
+      <echo message="Replacing Test Name"/>
+      <replaceregexp replace="${TEST}" file="target/customizedTestng.xml" match="TempTest"/>
+      <echo message="Replacing Group Name"/>
+      <replaceregexp replace="${GROUP}" file="target/customizedTestng.xml" match="TempGroup"/>
+    </else>
+  </if>
+</target>
+</project>
